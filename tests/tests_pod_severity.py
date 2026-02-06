@@ -1,7 +1,8 @@
 import unittest
 import logging
 logging.disable(logging.CRITICAL)
-from pod_alert import pod_severity, Severity # pyright: ignore[reportMissingImports]
+from pod_alert.pod_severity import pod_severity, Severity # pyright: ignore[reportMissingImports]
+
 class TestPodAlerts(unittest.TestCase):
 #test cases for pod severity function
  def test_ignore_payments_pod(self):
